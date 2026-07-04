@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "name": "Koszulka AIRFLOW",
+    "price": 59,
+    "image": "",
+    "colors": [
+      "Czarny",
+      "Biały",
+      "Granatowy"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ]
+  }
+]
