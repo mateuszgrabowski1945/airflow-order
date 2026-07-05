@@ -141,4 +141,31 @@ body{
         margin-top:25px;
     }
 
+}.hero{
+
+    min-height:220px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.hero-logo{
+
+    max-width:340px;
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+
+}
+
+.hero-subtitle{
+
+    color:white;
+    font-size:1rem;
+    opacity:.85;
+    margin:0;
+
 }
