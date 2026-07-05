@@ -122,4 +122,60 @@ body{
 
     color:white;
 
+}/* ===== KOSZYK ===== */
+
+.cart-box{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    position:sticky;
+
+    top:25px;
+
+}
+
+.cart-item{
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.cart-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.cart-remove{
+
+    background:#dc3545;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:5px 12px;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+.cart-remove:hover{
+
+    background:#bb2d3b;
+
 }
