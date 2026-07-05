@@ -1,7 +1,4 @@
-async function loadProducts() {
-
-    const response = await fetch("data/products.json");
-    const products = await response.json();
+function loadProducts() {
 
     document.getElementById("productCounter").innerText =
         `${products.length} produktów`;
@@ -20,17 +17,17 @@ async function loadProducts() {
             `<option>${size}</option>`
         ).join("");
 
+        const imageHtml = product.image && product.image !== "placeholder.jpg"
+            ? `<img src="images/products/${product.image}" class="img-fluid product-photo" alt="${product.name}">`
+            : `<div class="product-image">Zdjęcie w przygotowaniu</div>`;
+
         container.innerHTML += `
 
         <div class="col-lg-6 mb-4">
 
             <div class="product-card shadow-sm">
 
-                <div class="product-image">
-
-                    Zdjęcie w przygotowaniu
-
-                </div>
+                ${imageHtml}
 
                 <div class="product-body">
 
