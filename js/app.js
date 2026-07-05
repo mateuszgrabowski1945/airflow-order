@@ -1,9 +1,15 @@
-function loadProducts() {
+async function loadProducts() {
+
+    const response = await fetch("data/products.json");
+    const products = await response.json();
+
+    window.products = products;
 
     document.getElementById("productCounter").innerText =
         `${products.length} produktów`;
 
-    const container = document.getElementById("productsContainer");
+    const container =
+        document.getElementById("productsContainer");
 
     container.innerHTML = "";
 
@@ -13,19 +19,28 @@ function loadProducts() {
             `<option>${color}</option>`
         ).join("");
 
+        const hasOneSize =
+            product.sizes.length === 1;
+
         const sizes = product.sizes.map(size =>
             `<option>${size}</option>`
         ).join("");
 
-        const imageHtml = product.image && product.image !== "placeholder.jpg"
-            ? `<img src="images/products/${product.image}" class="img-fluid product-photo" alt="${product.name}">`
-            : `<div class="product-image">Zdjęcie w przygotowaniu</div>`;
+        const imageHtml =
+            product.image && product.image !== ""
+                ? `<img
+                    src="images/products/${product.image}"
+                    class="img-fluid w-100"
+                    alt="${product.name}">`
+                : `<div class="product-image">
+                        Zdjęcie w przygotowaniu
+                   </div>`;
 
         container.innerHTML += `
 
-        <div class="col-lg-6 mb-4">
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
 
-            <div class="product-card shadow-sm">
+            <div class="product-card">
 
                 ${imageHtml}
 
@@ -34,12 +49,12 @@ function loadProducts() {
                     <h4>${product.name}</h4>
 
                     <p class="price">
-
                         ${product.price.toFixed(2)} zł
-
                     </p>
 
-                    <label>Kolor</label>
+                    <label class="mb-1">
+                        Kolor
+                    </label>
 
                     <select
                         class="form-select mb-3"
@@ -49,17 +64,44 @@ function loadProducts() {
 
                     </select>
 
-                    <label>Rozmiar</label>
+                    ${
+                        hasOneSize
+                        ?
+                        `
+                        <input
+                            type="hidden"
+                            id="size-${index}"
+                            value="${product.sizes[0]}">
 
-                    <select
-                        class="form-select mb-3"
-                        id="size-${index}">
+                        <div class="mb-3">
 
-                        ${sizes}
+                            <strong>
+                                Rozmiar:
+                            </strong>
 
-                    </select>
+                            ${product.sizes[0]}
 
-                    <label>Ilość</label>
+                        </div>
+                        `
+                        :
+                        `
+                        <label class="mb-1">
+                            Rozmiar
+                        </label>
+
+                        <select
+                            class="form-select mb-3"
+                            id="size-${index}">
+
+                            ${sizes}
+
+                        </select>
+                        `
+                    }
+
+                    <label class="mb-1">
+                        Ilość
+                    </label>
 
                     <input
                         type="number"
@@ -85,8 +127,6 @@ function loadProducts() {
         `;
 
     });
-
-    window.products = products;
 
 }
 

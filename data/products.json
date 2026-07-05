@@ -1,19 +1,317 @@
 [
   {
     "id": 1,
-    "name": "Koszulka AIRFLOW",
-    "price": 59,
+    "name": "Koszulka męska",
+    "price": 50,
     "image": "",
     "colors": [
-      "Czarny",
-      "Biały",
-      "Granatowy"
+      "ABSOLUTE WHITE",
+      "APPLE",
+      "AQUA",
+      "ASH",
+      "ATOIL BLUE",
+      "BOTTLE GREEN",
+      "BURGUNDY",
+      "CANDY PINK",
+      "CARIBBEAN BLUE",
+      "CHOCOLATE",
+      "DARK GREY",
+      "DARK PURPLE",
+      "DEEP BLACK",
+      "DENIM",
+      "EMERALD",
+      "FRENCH NAVY",
+      "FUCHSIA",
+      "GOLD",
+      "GREY MELANGE",
+      "KELLY GREEN",
+      "KHAKI",
+      "LEMON",
+      "MOUSE GREY",
+      "NAVY",
+      "OFF WHITE",
+      "ORANGE",
+      "ORCHID PINK",
+      "RED",
+      "ROYAL BLUE",
+      "SKY BLUE",
+      "WHITE",
+      "ANCIENT PINK",
+      "ARMY",
+      "BLUE",
+      "DARK KHAKI",
+      "DARK PURPLE",
+      "EARTH",
+      "FOLK RED",
+      "HIBISCUS",
+      "ICE BLUE",
+      "LIGHT GREY",
+      "LIGHT PURPLE",
+      "ROPE",
+      "SAGE GREEN",
+      "SAND",
+      "TANGO RED",
+      "TERRACOTTA",
+      "ULTRAMARINE",
+      "ZINC"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "XXXL"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Koszulka damska",
+    "price": 50,
+    "image": "",
+    "colors": [
+      "ABSOLUTE WHITE",
+      "APPLE",
+      "AQUA",
+      "ASH",
+      "ATOIL BLUE",
+      "BOTTLE GREEN",
+      "BURGUNDY",
+      "CANDY PINK",
+      "CARIBBEAN BLUE",
+      "CHOCOLATE",
+      "DARK GREY",
+      "DARK PURPLE",
+      "DEEP BLACK",
+      "DENIM",
+      "EMERALD",
+      "FRENCH NAVY",
+      "FUCHSIA",
+      "GOLD",
+      "GREY MELANGE",
+      "KELLY GREEN",
+      "KHAKI",
+      "LEMON",
+      "MOUSE GREY",
+      "NAVY",
+      "OFF WHITE",
+      "ORANGE",
+      "ORCHID PINK",
+      "RED",
+      "ROYAL BLUE",
+      "SKY BLUE",
+      "WHITE"
     ],
     "sizes": [
       "S",
       "M",
       "L",
-      "XL"
+      "XL",
+      "XXL"
     ]
+  },
+  {
+    "id": 3,
+    "name": "Bluza unisex",
+    "price": 150,
+    "image": "",
+    "colors": [
+      "BLACK",
+      "BOTTLE GREEN",
+      "DENIM",
+      "FOLK PINK",
+      "FOLK RED",
+      "FRENCH NAVY",
+      "GREY MELANGE",
+      "OFF WHITE",
+      "PEACH",
+      "ROYAL BLUE",
+      "SPRING GREEN",
+      "WHITE"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Polo",
+    "price": 85,
+    "image": "",
+    "colors": [
+      "BLACK/WHITE",
+      "RED/WHITE",
+      "FRENCH NAVY/WHITE",
+      "GREY/NAVY",
+      "ROYAL BLUE/WHITE",
+      "WHITE/NAVY"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Plecak",
+    "price": 140,
+    "image": "",
+    "colors": [
+      "Black"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Czapka Trucker",
+    "price": 75,
+    "image": "",
+    "colors": [
+      "BLACK",
+      "BUCK",
+      "CARMEL",
+      "CRANBERRY",
+      "DARK GREY",
+      "DARK NAVY",
+      "EVERGREEN",
+      "HEATHER NAVY",
+      "KHAKI",
+      "LIGHT NAVY",
+      "MAROON",
+      "NAVY",
+      "PINK",
+      "RED",
+      "SILVER",
+      "STEEL GREY",
+      "WHITE"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Czapka Baseball",
+    "price": 75,
+    "image": "",
+    "colors": [
+      "BLACK",
+      "DARK GREY",
+      "NAVY",
+      "ROYAL",
+      "WHITE"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Saszetka",
+    "price": 50,
+    "image": "",
+    "colors": [
+      "BLACK",
+      "RED",
+      "MILITARY GREEN",
+      "MUSTARD",
+      "NAVY"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Butelka metalowa 500 ml",
+    "price": 79,
+    "image": "",
+    "colors": [],
+    "sizes": []
+  },
+  {
+    "id": 10,
+    "name": "Kubek ceramiczny",
+    "price": 25,
+    "image": "",
+    "colors": [],
+    "sizes": []
+  },
+  {
+    "id": 11,
+    "name": "Worko-plecak",
+    "price": 50,
+    "image": "",
+    "colors": [],
+    "sizes": []
+  },
+  {
+    "id": 12,
+    "name": "Torba bawełniana gruba",
+    "price": 45,
+    "image": "",
+    "colors": [
+      "CZARNY",
+      "GRANATOWY"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Torba bawełniana",
+    "price": 20,
+    "image": "",
+    "colors": [
+      "NATURAL",
+      "BK",
+      "WH",
+      "NY",
+      "RB",
+      "AQ",
+      "RD",
+      "OR",
+      "SY",
+      "KG",
+      "LG",
+      "GY",
+      "BU",
+      "BR",
+      "TEG",
+      "PKV",
+      "NA+BK"
+    ],
+    "sizes": [
+      "One Size"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Kubek emaliowany",
+    "price": 45,
+    "image": "",
+    "colors": [],
+    "sizes": []
+  },
+  {
+    "id": 15,
+    "name": "Polo Haft",
+    "price": 22,
+    "image": "",
+    "colors": [],
+    "sizes": []
   }
 ]
