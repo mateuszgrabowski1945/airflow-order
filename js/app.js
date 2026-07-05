@@ -131,3 +131,33 @@ async function loadProducts() {
 }
 
 loadProducts();
+const mobileButton = document.querySelector('.mobile-order-button');
+const checkoutPanel = document.querySelector('#checkoutPanel');
+
+if (mobileButton && checkoutPanel) {
+
+    const observer = new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    mobileButton.style.display = 'none';
+                } else {
+                    mobileButton.style.display = 'block';
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
+        }
+
+    );
+
+    observer.observe(checkoutPanel);
+
+}
