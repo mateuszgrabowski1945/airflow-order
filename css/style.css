@@ -168,4 +168,23 @@ body{
     opacity:.85;
     margin:0;
 
+}@media(max-width:768px){
+
+    .product-image{
+        height:140px;
+    }
+
+    .product-body{
+        padding:12px;
+    }
+
+    .product-body h4{
+        font-size:.9rem;
+        min-height:auto;
+    }
+
+    .price{
+        font-size:1.1rem;
+    }
+
 }
