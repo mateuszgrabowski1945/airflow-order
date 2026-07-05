@@ -1,3 +1,24 @@
+function generateOrderNumber(){
+
+    let current =
+        parseInt(
+            localStorage.getItem(
+                "airflowOrderNumber"
+            ) || "0"
+        );
+
+    current++;
+
+    localStorage.setItem(
+        "airflowOrderNumber",
+        current
+    );
+
+    const year =
+        new Date().getFullYear();
+
+    return `AF-${year}-${String(current).padStart(6,"0")}`;
+}
 emailjs.init({
     publicKey: "PDi2rqqaIxLdZahqc"
 });
@@ -21,7 +42,8 @@ Ilość: ${item.quantity}
     return text;
 }
 
-async function sendOrder(){
+async function sendOrder(){const orderNumber =
+    generateOrderNumber();
 
     if(cart.length === 0){
 
@@ -52,6 +74,12 @@ async function sendOrder(){
     }
 
     const templateParams = {
+
+    order_number:
+        orderNumber,
+
+    customer_name:
+        customerName,
 
         customer_name:
             customerName,
@@ -93,8 +121,12 @@ async function sendOrder(){
         );
 
         alert(
-            "✅ Zamówienie zostało wysłane."
-        );
+`✅ Zamówienie zostało wysłane.
+
+Numer zamówienia:
+
+${orderNumber}`
+);
 
         cart = [];
 
