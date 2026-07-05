@@ -33,17 +33,7 @@
         <div class="col-xl-8">
 
             <div class="products-header">
-<div class="d-lg-none mb-3">
 
-    <button
-        class="btn btn-airflow w-100"
-        onclick="document.querySelector('.checkout-panel').scrollIntoView({behavior:'smooth'})">
-
-        🛒 Przejdź do koszyka i zamówienia
-
-    </button>
-
-</div>
                 <h2>Produkty</h2>
 
                 <span id="productCounter">0 produktów</span>
@@ -232,7 +222,17 @@
     </div>
 
 </div>
+<div class="mobile-order-button">
 
+    <button
+        class="btn btn-airflow"
+        onclick="document.querySelector('.checkout-panel').scrollIntoView({behavior:'smooth'})">
+
+        🛒 Zamówienie
+
+    </button>
+
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script src="js/cart.js"></script>

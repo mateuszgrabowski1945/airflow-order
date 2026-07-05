@@ -13,12 +13,21 @@ body{
     font-family:Segoe UI,Arial,sans-serif;
 }
 
+/* HERO */
+
 .hero{
     background:linear-gradient(135deg,#0B1F3A,#163b70);
     color:white;
     padding:50px;
     border-radius:24px;
     text-align:center;
+
+    min-height:220px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero h1{
@@ -31,6 +40,22 @@ body{
     margin-top:10px;
     opacity:.9;
 }
+
+.hero-logo{
+    max-width:340px;
+    width:100%;
+    height:auto;
+    margin-bottom:15px;
+}
+
+.hero-subtitle{
+    color:white;
+    font-size:1rem;
+    opacity:.85;
+    margin:0;
+}
+
+/* PRODUKTY */
 
 .products-header{
     display:flex;
@@ -81,6 +106,8 @@ body{
     color:var(--airflow);
 }
 
+/* PANEL ZAMÓWIENIA */
+
 .checkout-panel{
     position:sticky;
     top:20px;
@@ -99,6 +126,8 @@ body{
     margin-bottom:15px;
 }
 
+/* KOSZYK */
+
 .cart-item{
     padding:12px 0;
     border-bottom:1px solid #eee;
@@ -115,6 +144,16 @@ body{
     font-size:1.2rem;
 }
 
+.cart-remove{
+    border:none;
+    background:#dc3545;
+    color:white;
+    padding:6px 10px;
+    border-radius:8px;
+}
+
+/* PRZYCISKI */
+
 .btn-airflow{
     background:var(--airflow);
     color:white;
@@ -126,13 +165,13 @@ body{
     color:white;
 }
 
-.cart-remove{
-    border:none;
-    background:#dc3545;
-    color:white;
-    padding:6px 10px;
-    border-radius:8px;
+/* MOBILE ORDER BUTTON */
+
+.mobile-order-button{
+    display:none;
 }
+
+/* TABLET */
 
 @media(max-width:1200px){
 
@@ -141,34 +180,33 @@ body{
         margin-top:25px;
     }
 
-}.hero{
+}
 
-    min-height:220px;
+/* MOBILE */
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+@media(max-width:991px){
+
+    body{
+        padding-bottom:90px;
+    }
+
+    .mobile-order-button{
+        display:block;
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        z-index:9999;
+    }
+
+    .mobile-order-button .btn{
+        border-radius:50px;
+        padding:12px 18px;
+        box-shadow:0 5px 20px rgba(0,0,0,.2);
+    }
 
 }
 
-.hero-logo{
-
-    max-width:340px;
-    width:100%;
-    height:auto;
-    margin-bottom:15px;
-
-}
-
-.hero-subtitle{
-
-    color:white;
-    font-size:1rem;
-    opacity:.85;
-    margin:0;
-
-}@media(max-width:768px){
+@media(max-width:768px){
 
     .product-image{
         height:140px;
