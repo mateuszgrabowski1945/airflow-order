@@ -250,18 +250,7 @@ function renderCart(){
     </div>
 
     `;
-const mobileTotal =
-    document.getElementById(
-        "mobileCartTotal"
-    );
 
-if(mobileTotal){
-
-    mobileTotal.innerHTML =
-        grandTotal.toFixed(2) +
-        " zł";
-
-}
     cartItems.innerHTML =
         html;
 
