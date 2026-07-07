@@ -52,17 +52,40 @@ async function loadProducts() {
                         ${product.price.toFixed(2)} zł
                     </p>
 
-                    <label class="mb-1">
-                        Kolor
-                    </label>
+${
+    product.colors.length === 1
+    ?
+    `
+    <input
+        type="hidden"
+        id="color-${index}"
+        value="${product.colors[0]}">
 
-                    <select
-                        class="form-select mb-3"
-                        id="color-${index}">
+    <div class="mb-3">
 
-                        ${colors}
+        <strong>
+            Kolor:
+        </strong>
 
-                    </select>
+        ${product.colors[0]}
+
+    </div>
+    `
+    :
+    `
+    <label class="mb-1">
+        Kolor
+    </label>
+
+    <select
+        class="form-select mb-3"
+        id="color-${index}">
+
+        ${colors}
+
+    </select>
+    `
+}
 
                     ${
                         hasOneSize
