@@ -238,24 +238,27 @@
     "name": "Butelka metalowa 500 ml",
     "price": 79,
     "image": "butelka_metalowa.jpg",
-    "colors": [],
-    "sizes": []
+    "colors": ["Metal"],
+"sizes": ["500 ml"]
   },
   {
     "id": 10,
     "name": "Kubek ceramiczny",
     "price": 25,
     "image": "kubek_ceramiczny.jpg",
-    "colors": [],
-    "sizes": []
+    "colors": ["Biały"],
+"sizes": ["330 ml"]
   },
   {
     "id": 11,
     "name": "Worko-plecak",
     "price": 50,
     "image": "worko_plecak.jpg",
-    "colors": [],
-    "sizes": []
+    "colors": [
+  "CZARNY",
+  "GRANATOWY"
+],
+"sizes": ["One Size"]
   },
   {
     "id": 12,
@@ -303,8 +306,8 @@
     "name": "Kubek emaliowany",
     "price": 45,
     "image": "kubek_emaliowany.jpg",
-    "colors": [],
-    "sizes": []
+    "colors": ["Biały"],
+"sizes": ["330 ml"]
   },
   {
     "id": 15,
