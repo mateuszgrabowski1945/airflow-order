@@ -158,6 +158,70 @@ if (mobileButton && checkoutPanel) {
 
     );
 
-    observer.observe(checkoutPanel);
+observer.observe(checkoutPanel);
 
 }
+
+// DOSTAWA
+
+function updateShippingFields() {
+
+    const inpost =
+        document.getElementById("inpost");
+
+    const dpd =
+        document.getElementById("dpd");
+
+    const pickup =
+        document.getElementById("pickup");
+
+    const inpostBox =
+        document.getElementById("inpostBox");
+
+    const addressSection =
+        document.getElementById("addressSection");
+
+    if (
+        !inpost ||
+        !dpd ||
+        !pickup ||
+        !inpostBox ||
+        !addressSection
+    ) {
+        return;
+    }
+
+    if (inpost.checked) {
+
+        inpostBox.style.display = "block";
+        addressSection.style.display = "none";
+
+    }
+    else if (dpd.checked) {
+
+        inpostBox.style.display = "none";
+        addressSection.style.display = "block";
+
+    }
+    else {
+
+        inpostBox.style.display = "none";
+        addressSection.style.display = "none";
+
+    }
+
+}
+
+document
+    .querySelectorAll('input[name="shipping"]')
+    .forEach(radio => {
+
+        radio.addEventListener(
+            "change",
+            updateShippingFields
+        );
+
+    });
+
+updateShippingFields();
+console.log("AIRFLOW shipping loaded");

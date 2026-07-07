@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Koszulka męska",
     "price": 50,
-    "image": "",
+    "image": "koszulka_męska.jpg",
     "colors": [
       "ABSOLUTE WHITE",
       "APPLE",
@@ -69,7 +69,7 @@
     "id": 2,
     "name": "Koszulka damska",
     "price": 50,
-    "image": "",
+    "image": "koszulka_damska.jpg",
     "colors": [
       "ABSOLUTE WHITE",
       "APPLE",
@@ -115,7 +115,7 @@
     "id": 3,
     "name": "Bluza unisex",
     "price": 150,
-    "image": "",
+    "image": "bluza_unisex.jpg",
     "colors": [
       "BLACK",
       "BOTTLE GREEN",
@@ -141,9 +141,9 @@
   },
   {
     "id": 4,
-    "name": "Polo",
+    "name": "Polo unsiex",
     "price": 85,
-    "image": "",
+    "image": "koszulka_polo_i_polo_haft.jpg",
     "colors": [
       "BLACK/WHITE",
       "RED/WHITE",
@@ -165,7 +165,7 @@
     "id": 5,
     "name": "Plecak",
     "price": 140,
-    "image": "",
+    "image": "plecak.jpg",
     "colors": [
       "Black"
     ],
@@ -177,7 +177,7 @@
     "id": 6,
     "name": "Czapka Trucker",
     "price": 75,
-    "image": "",
+    "image": "czapka_truck.jpg",
     "colors": [
       "BLACK",
       "BUCK",
@@ -205,7 +205,7 @@
     "id": 7,
     "name": "Czapka Baseball",
     "price": 75,
-    "image": "",
+    "image": "czapka_baseball.jpg",
     "colors": [
       "BLACK",
       "DARK GREY",
@@ -221,7 +221,7 @@
     "id": 8,
     "name": "Saszetka",
     "price": 50,
-    "image": "",
+    "image": "saszetka.jpg",
     "colors": [
       "BLACK",
       "RED",
@@ -237,7 +237,7 @@
     "id": 9,
     "name": "Butelka metalowa 500 ml",
     "price": 79,
-    "image": "",
+    "image": "butelka_metalowa.jpg",
     "colors": [],
     "sizes": []
   },
@@ -245,7 +245,7 @@
     "id": 10,
     "name": "Kubek ceramiczny",
     "price": 25,
-    "image": "",
+    "image": "kubek_ceramiczny.jpg",
     "colors": [],
     "sizes": []
   },
@@ -253,7 +253,7 @@
     "id": 11,
     "name": "Worko-plecak",
     "price": 50,
-    "image": "",
+    "image": "worko_plecak.jpg",
     "colors": [],
     "sizes": []
   },
@@ -261,7 +261,7 @@
     "id": 12,
     "name": "Torba bawełniana gruba",
     "price": 45,
-    "image": "",
+    "image": "torba_gruba.jpg",
     "colors": [
       "CZARNY",
       "GRANATOWY"
@@ -274,7 +274,7 @@
     "id": 13,
     "name": "Torba bawełniana",
     "price": 20,
-    "image": "",
+    "image": "torba_bawełniana.jpg",
     "colors": [
       "NATURAL",
       "BK",
@@ -302,16 +302,29 @@
     "id": 14,
     "name": "Kubek emaliowany",
     "price": 45,
-    "image": "",
+    "image": "kubek_emaliowany.jpg",
     "colors": [],
     "sizes": []
   },
   {
     "id": 15,
-    "name": "Polo Haft",
-    "price": 22,
-    "image": "",
-    "colors": [],
-    "sizes": []
+    "name": "Polo Haft unisex",
+    "price": 120,
+    "image": "koszulka_polo_i_polo_haft.jpg",
+    "colors": [
+      "BLACK/WHITE",
+      "RED/WHITE",
+      "FRENCH NAVY/WHITE",
+      "GREY/NAVY",
+      "ROYAL BLUE/WHITE",
+      "WHITE/NAVY"
+    ],
+    "sizes": [      
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"]
   }
 ]
