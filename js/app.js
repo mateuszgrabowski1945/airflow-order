@@ -265,13 +265,24 @@ if (chooseLockerButton && lockerCode) {
             return;
         }
 
-        new window.Furgonetka.Map({
+new window.Furgonetka.Map({
 
     apiKey: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJGdXJnb25ldGthLnBsIiwiaWF0IjoxNzgzNTg0MjcwLjU3MzcxMywic3ViIjoiOGYzYTk5ZTMtODlmYi00NTM4LWJlZGQtMWJlMTQyNTE3MjA0In0.9a-9byNTYxL8H01WRKq5wKuOX4O0SkOipSKnweu23eI",
 
+    courierServices: ["inpost"],
+    courierServicesFilter: ["inpost"],
+
+    availableServiceTypes: ["parcel_machine"],
+    showServiceTypeFilter: false,
+
     callback: (params) => {
 
-        console.log(params);
+        lockerCode.value =
+            params.point.code;
+
+    }
+
+}).show();
 
         lockerCode.value =
             params.point.code;
