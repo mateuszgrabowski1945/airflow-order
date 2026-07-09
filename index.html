@@ -7,6 +7,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://furgonetka.pl/js/dist/map/map.js"
+    async>
+</script>
 </head>
 
 <body>
@@ -96,11 +100,21 @@
 
                     <div id="inpostBox">
 
-                        <input
-                            type="text"
-                            class="form-control mb-3"
-                            id="lockerCode"
-                            placeholder="Kod paczkomatu">
+                        <button
+    type="button"
+    class="btn btn-outline-primary w-100 mb-2"
+    id="chooseLocker">
+
+    📍 Wybierz paczkomat
+
+</button>
+
+<input
+    type="text"
+    class="form-control"
+    id="lockerCode"
+    readonly
+    placeholder="Nie wybrano paczkomatu">
 
                     </div>
 

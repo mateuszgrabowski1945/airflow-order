@@ -248,3 +248,38 @@ document
 
 updateShippingFields();
 console.log("AIRFLOW shipping loaded");
+// FURGONETKA MAPA
+
+const chooseLockerButton =
+    document.getElementById("chooseLocker");
+
+const lockerCode =
+    document.getElementById("lockerCode");
+
+if (chooseLockerButton && lockerCode) {
+
+    chooseLockerButton.addEventListener("click", () => {
+
+        if (!window.Furgonetka) {
+            alert("Mapa Furgonetki jeszcze się ładuje. Spróbuj ponownie za chwilę.");
+            return;
+        }
+
+        new window.Furgonetka.Map({
+
+    apiKey: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJGdXJnb25ldGthLnBsIiwiaWF0IjoxNzgzNTg0MjcwLjU3MzcxMywic3ViIjoiOGYzYTk5ZTMtODlmYi00NTM4LWJlZGQtMWJlMTQyNTE3MjA0In0.9a-9byNTYxL8H01WRKq5wKuOX4O0SkOipSKnweu23eI",
+
+    callback: (params) => {
+
+        console.log(params);
+
+        lockerCode.value =
+            params.point.code;
+
+    }
+
+}).show();
+
+    });
+
+}
