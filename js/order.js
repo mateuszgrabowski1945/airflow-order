@@ -26,8 +26,7 @@ function buildOrderText() {
 
     cart.forEach(item => {
 
-        text += `
-${item.name}
+        text += `${item.name}
 Kolor: ${item.color}
 Rozmiar: ${item.size}
 Ilość: ${item.quantity}
@@ -37,12 +36,12 @@ Ilość: ${item.quantity}
     });
 
     return text;
+
 }
 
 async function sendOrder() {
 
-    const orderNumber =
-        generateOrderNumber();
+    const orderNumber = generateOrderNumber();
 
     const customerName =
         document.getElementById("customerName").value.trim();
@@ -98,25 +97,18 @@ async function sendOrder() {
         !locker
     ) {
 
-        alert("Podaj kod paczkomatu.");
+        alert("Wybierz paczkomat.");
         return;
 
     }
 
     if (
-        document.getElementById("dpd").checked
+        document.getElementById("dpd").checked &&
+        (!street || !zip || !city)
     ) {
 
-        if (
-            !street ||
-            !zip ||
-            !city
-        ) {
-
-            alert("Uzupełnij adres dostawy.");
-            return;
-
-        }
+        alert("Uzupełnij adres dostawy.");
+        return;
 
     }
 
@@ -140,6 +132,12 @@ async function sendOrder() {
         city: city,
 
         locker: locker,
+        shipping:
+    document.getElementById("inpost").checked
+        ? `Paczkomat InPost\n${locker}`
+        : document.getElementById("dpd").checked
+            ? `Kurier DPD\n${street}\n${zip} ${city}`
+            : "Odbiór osobisty",
 
         order_items:
             buildOrderText(),
@@ -157,11 +155,33 @@ async function sendOrder() {
         orderButton.disabled = true;
         orderButton.innerText = "Wysyłanie...";
 
+        // MAIL DO AIRFLOW
+
         await emailjs.send(
             "service_uoy6gkb",
             "template_0c6ktb8",
             templateParams
         );
+
+        // MAIL DO KLIENTA
+
+        try {
+
+            await emailjs.send(
+                "service_uoy6gkb",
+                "template_hwnmb58",
+                templateParams
+            );
+
+        }
+        catch (mailError) {
+
+            console.error(
+                "Nie udało się wysłać maila do klienta:",
+                mailError
+            );
+
+        }
 
         alert(
 `✅ Zamówienie zostało wysłane.
@@ -174,6 +194,7 @@ ${orderNumber}`
         cart = [];
 
         saveCart();
+
         renderCart();
 
         document.getElementById("customerName").value = "";
