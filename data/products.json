@@ -108,7 +108,8 @@
       "M",
       "L",
       "XL",
-      "XXL"
+      "XXL",
+      "XXXL"
     ]
   },
   {
@@ -136,31 +137,56 @@
       "M",
       "L",
       "XL",
-      "XXL"
+      "XXL",
+      "XXXL"
     ]
   },
-  {
-    "id": 4,
-    "name": "Polo unsiex",
-    "price": 85,
-    "image": "koszulka_polo_i_polo_haft.jpg",
-    "colors": [
-      "BLACK/WHITE",
-      "RED/WHITE",
-      "FRENCH NAVY/WHITE",
-      "GREY/NAVY",
-      "ROYAL BLUE/WHITE",
-      "WHITE/NAVY"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
-  },
+{
+  "id": 4,
+  "name": "Polo unisex z nadrukiem",
+  "price": 85,
+  "image": "koszulka_polo_i_polo_haft.jpg",
+  "colors": [
+    "BLACK/WHITE",
+    "RED/WHITE",
+    "FRENCH NAVY/WHITE",
+    "GREY/NAVY",
+    "ROYAL BLUE/WHITE",
+    "WHITE/NAVY"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "XXXL"
+  ]
+},
+{
+  "id": 15,
+  "name": "Polo unisex z haftem",
+  "price": 120,
+  "image": "koszulka_polo_i_polo_haft.jpg",
+  "colors": [
+    "BLACK/WHITE",
+    "RED/WHITE",
+    "FRENCH NAVY/WHITE",
+    "GREY/NAVY",
+    "ROYAL BLUE/WHITE",
+    "WHITE/NAVY"
+  ],
+  "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "XXXL"
+  ]
+},
   {
     "id": 5,
     "name": "Plecak",
@@ -308,26 +334,4 @@
     "image": "kubek_emaliowany.jpg",
     "colors": ["Biały"],
 "sizes": ["330 ml"]
-  },
-  {
-    "id": 15,
-    "name": "Polo Haft unisex",
-    "price": 120,
-    "image": "koszulka_polo_i_polo_haft.jpg",
-    "colors": [
-      "BLACK/WHITE",
-      "RED/WHITE",
-      "FRENCH NAVY/WHITE",
-      "GREY/NAVY",
-      "ROYAL BLUE/WHITE",
-      "WHITE/NAVY"
-    ],
-    "sizes": [      
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"]
-  }
-]
+  }]
