@@ -282,14 +282,7 @@ new window.Furgonetka.Map({
 
     }
 
-}).show();
-
-        lockerCode.value =
-            params.point.code;
-
-    }
-
-}).show();
+        }).show();
 
     });
 
